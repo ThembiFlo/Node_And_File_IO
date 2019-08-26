@@ -1,0 +1,26 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "node test spec",
+  "main": "nodeTest.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jasmine": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine nodeTest.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThembiFlo/node.git"
+  },
+  "author": "Thembi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThembiFlo/node/issues"
+  },
+  "homepage": "https://github.com/ThembiFlo/node#readme"
+}

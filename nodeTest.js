@@ -29,7 +29,7 @@ module.exports = class Visitor{
         console.log(data);
 
         fs.writeFileSync(`visitor${id}.json`, data);
-
+    
         console.log(data);
         
         // let visitor = JSON.parse(data); //passing data of visitors from json
