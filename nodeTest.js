@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 const fs = require('fs');
 
 
@@ -10,14 +10,11 @@ module.exports = class Visitor{
         this.time = timeOfVisit;
         this.comments = comments;
         this.nameOfAssistance = nameOfAssistance;
-        this.id;
-        
-
     }
 
     save(id) {
+        console.log("line 17", id)
         let newUser = {
-        id: this.id,
         fullName: this.name,
         age : this.age,
         date : this.date,
@@ -29,12 +26,6 @@ module.exports = class Visitor{
         console.log(data);
 
         fs.writeFileSync(`visitor${id}.json`, data);
-    
-        console.log(data);
-        
-        // let visitor = JSON.parse(data); //passing data of visitors from json
-        return; //visitor;
-        
     }
 
     load(id) {
@@ -48,5 +39,3 @@ module.exports = class Visitor{
         return visitorData;
    }
 }
-
-
